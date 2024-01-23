@@ -31,7 +31,7 @@ function Edit() {
     const getinput = async (e) => {
 
 
-        const res = await fetch(`http://localhost:9000/get/${id}`, {
+        const res = await fetch(`https://react-backend-wheat.vercel.app/get/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
@@ -58,7 +58,7 @@ function Edit() {
     const updateuser = async(e)=>{
         e.preventDefault();
         const {lapname,lapmodel,stockcount,price,description} = val;
-        const res2 = await fetch(`http://localhost:9000/edit/${id}`,{
+        const res2 = await fetch(`https://react-backend-wheat.vercel.app/edit/${id}`,{
             method:"PUT",
             headers:{
                 "Content-Type":"application/json"
