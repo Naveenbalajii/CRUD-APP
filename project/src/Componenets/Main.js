@@ -35,7 +35,7 @@ function Main() {
     }, [])
 
     const deleteuser = async (id) => {
-        const res2 = await fetch(`http://localhost:9000/delete/${id}`, {
+        const res2 = await fetch(`https://react-backend-wheat.vercel.app/delete/${id}`, {
             method: "DELETE",
             headers: {
                 "Content-Type": "application/json"
