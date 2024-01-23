@@ -13,7 +13,7 @@ function View() {
     const getinput = async (e) => {
 
 
-        const res = await fetch(`http://localhost:9000/get/${id}`, {
+        const res = await fetch(`https://react-backend-wheat.vercel.app/get/${id}`, {
             method: "GET",
             headers: {
                 "Content-Type": "application/json"
