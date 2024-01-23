@@ -24,7 +24,7 @@ function Add() {
     const addinput = async(e)=>{
         e.preventDefault();
         const {lapname,lapmodel,stockcount,price,description} = val;
-        const res = await fetch("http://localhost:9000/create",{
+        const res = await fetch("https://react-backend-wheat.vercel.app/create",{
             method:"POST",
             headers:{
                 "Content-Type":"application/json"
